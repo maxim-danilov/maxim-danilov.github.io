@@ -1,14 +1,14 @@
 ---
 layout: post
-title:  "Turning Vim into an JavaScript IDE"
+title:  "Turning Vim into a JavaScript IDE"
 date:   2018-07-06 14:50:30 +0300
 categories: jekyll update
 ---
 Integrated development environment (IDE) is an important tool for software developers. In simple terms, IDE is a powerful text editor for creating programs. 
 
-One of the best IDE for JavaScript is WebStorm. WebStorm is able to understand your code, suggest a good autocomplete, debug and refactor your code. But such IDE have a few disadvantages: sometimes it’s slow, takes much space, limited settings, high resource consumption.
+One of the best IDE for JavaScript is WebStorm. WebStorm is able to understand your code, suggest a good autocomplete, debug and refactor your code. But such IDE's have a few disadvantages: sometimes it’s slow, takes much space, limited settings, high resource consumption.
 
-Vim is a lightweight, fast, and free text editor. Vim is well known for its hotkeys that make coding faster and more comfortable. Developers created a lot of Vim plugins for Vim. 
+Vim is a lightweight, fast, and free text editor. Vim is well known for its hotkeys that make coding faster and more comfortable. Developers created a lot of plugins for Vim. 
 
 So we're going to build a fast, flexible, lightweight IDE using Vim with plugins. Let’s to define the necessary functions of IDE:
 * Syntax highlighting 
@@ -96,6 +96,8 @@ filetype plugin indent on    " required
 
 Launch Vim and run `:PluginInstall` 
 
+![image-title-here](/assets/img/0001.png){:class="img-responsive"}
+
 ## Install the syntax highlighting plugin
 A syntax hignlignter assists programmers when reading and analysing code. We will install this plugin:
 [https://github.com/pangloss/vim-javascript](https://github.com/pangloss/vim-javascript)
@@ -103,11 +105,18 @@ A syntax hignlignter assists programmers when reading and analysing code. We wil
 We need add this line to `.vimrc` into plugins section:
 
 `Plugin 'pangloss/vim-javascript'`
+
+![image-title-here](/assets/img/0002.png){:class="img-responsive"}
+
 Then we need to install the plugin using vundle. Start Vim and type `:PluginInstall` command. The plugin is installed:
 
+![image-title-here](/assets/img/0003.png){:class="img-responsive"}
+
 Before:
+![image-title-here](/assets/img/0004.png){:class="img-responsive"}
 
 After:
+![image-title-here](/assets/img/0008.png){:class="img-responsive"}
 
 Now it looks better.
 
@@ -130,6 +139,8 @@ Also remap the hotkey to `Ctrl+j`
 imap <C-J> <esc>a<Plug>snipMateNextOrTrigger
 smap <C-J> <Plug>snipMateNextOrTrigger
 {% endhighlight %}
+
+![image-title-here](/assets/img/0001.gif){:class="img-responsive"}
 
 It works! 
 
@@ -167,12 +178,16 @@ npm install eslint --save-dev
 vim index.js
 {% endhighlight %}
 
+![image-title-here](/assets/img/0002.gif){:class="img-responsive"}
+
 The lint works but I would like to adjust messages style. I added these lines to `.vimrc`:
 {% highlight plain %}
 let g:ale_echo_msg_error_str = 'E'
 let g:ale_echo_msg_warning_str = 'W'
 let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
 {% endhighlight %}
+
+![image-title-here](/assets/img/0006.png){:class="img-responsive"}
 
 ## Line numbers
 Line numbers are disabled by default. 
@@ -182,6 +197,7 @@ Add this to `.vimrc`:
 set number
 {% endhighlight %}
 
+![image-title-here](/assets/img/0007.png){:class="img-responsive"}
 
 ## Code formatter
 A code formatter (a code beautifier) converts your code into correct format. You can quickly write some code then to format it with just one click. ESLint and ALE will do this job. 
@@ -191,6 +207,8 @@ These options activate code formatting on saving a file:
 let b:ale_fixers = ['eslint']
 let g:ale_fix_on_save = 1
 {% endhighlight %}
+
+![image-title-here](/assets/img/0003.gif){:class="img-responsive"}
 
 ## Autocomplete
 Autocomplete increases your typing speed. It predicts the word a user intends to enter. 
@@ -216,6 +234,8 @@ cd ~/.vim/bundle/YouCompleteMe
 {% endhighlight %}
 
 Cool, it works! 
+
+![image-title-here](/assets/img/0004.gif){:class="img-responsive"}
 
 
 ## Conclusion 
