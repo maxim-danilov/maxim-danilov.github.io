@@ -237,6 +237,55 @@ Cool, it works!
 
 ![image-title-here](/assets/img/0004.gif){:class="img-responsive"}
 
+## File explorer
+NERDTree is a file system explorer
+[https://github.com/scrooloose/nerdtree](https://github.com/scrooloose/nerdtree)
+
+{% highlight bash %}
+Plugin 'scrooloose/nerdtree'
+{% endhighlight %}
+
+I added this to my `.vimrc` to open `NERDTree` with Ctrl+n:
+{% highlight bash %}
+" NERDTress Ctrl+n
+map <C-n> :NERDTreeToggle<CR>
+" NERDTress File highlighting
+{% endhighlight %}
+
+These line configure different highlighting for different file extensions:
+{% highlight bash %}
+function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
+ exec 'autocmd filetype nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:guibg .' guifg='. a:guifg
+ exec 'autocmd filetype nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
+endfunction
+call NERDTreeHighlightFile('jade', 'green', 'none', 'green', '#151515')
+call NERDTreeHighlightFile('ini', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('md', 'blue', 'none', '#3366FF', '#151515')
+call NERDTreeHighlightFile('yml', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('config', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('conf', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('json', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('html', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('styl', 'cyan', 'none', 'cyan', '#151515')
+call NERDTreeHighlightFile('css', 'cyan', 'none', 'cyan', '#151515')
+call NERDTreeHighlightFile('coffee', 'Red', 'none', 'red', '#151515')
+call NERDTreeHighlightFile('js', 'Red', 'none', '#ffa500', '#151515')
+call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#151515')
+{% endhighlight %}
+
+![image-title-here](/assets/img/0009.png){:class="img-responsive"}
+
+## System clipboard
+[System copy](https://github.com/christoomey/vim-system-copy) provides copying/pasting text to the system clipboard. 
+
+Install dependencies: 
+{% highlight bash %}
+apt-get install xsel
+{% endhighlight %}
+
+Add `Plugin 'christoomey/vim-system-copy'` to `.vimrc`, run `:PluginInstall`.
+
+Use `cp` to copy into system clipboard and `cv` to paste from system clipboard.
 
 ## Conclusion 
 We just made a good tool to write a JS code and edit any config files. It's lightweight, fast, сustomizable and I can use it on any device via SSH. 
