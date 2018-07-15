@@ -4,6 +4,9 @@ title:  "Turning Vim into a JavaScript IDE"
 date:   2018-07-06 14:50:30 +0300
 categories: jekyll update
 ---
+
+![image-title-here](/assets/img/0005.gif){:class="img-responsive"}
+
 Integrated development environment (IDE) is an important tool for software developers. In simple terms, IDE is a powerful text editor for creating programs. 
 
 One of the best IDE for JavaScript is WebStorm. WebStorm is able to understand your code, suggest a good autocomplete, debug and refactor your code. But such IDE's have a few disadvantages: sometimes it’s slow, takes much space, limited settings, high resource consumption.
