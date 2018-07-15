@@ -6,11 +6,10 @@ permalink: /about/
 
 ![image-title-here](/assets/img/maxim-danilov.jpg){:height="40%" width="40%"}
 
-I'm a full stack JS developer. Team player, responsible, serious, self-motivated, with good English level. I'm open to new challenges and I'll be glad to help you. Feel free to contact me.
+I'm a full stack JS developer. Team player, responsible, serious, self-motivated, with good English level. I'm open to new challenges and I'll be glad to help you. 
 
+Feel free to contact me.
 
-You can find my repository on **GitHub**:
-[https://github.com/maxim-danilov](https://github.com/maxim-danilov)
+[my repository on **GitHub**](https://github.com/maxim-danilov)
 
-You can find my profile on **Upwork**:
-[https://www.upwork.com/freelancers/~01e44817c800471b90](https://www.upwork.com/freelancers/~01e44817c800471b90)
+[my profile on **Upwork**](https://www.upwork.com/freelancers/~01e44817c800471b90)
