@@ -135,6 +135,7 @@ Add to `.vimrc`:
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
+Plugin 'grvcoelho/vim-javascript-snippets'
 {% endhighlight %}
 
 Also remap the hotkey to `Ctrl+j`
@@ -163,6 +164,10 @@ Run `:PluginInstall`
 ### Configure ESLint:
 {% highlight bash %}
 mkdir lintTest
+{% endhighlight %}
+
+{% highlight bash %}
+cd lintTest
 {% endhighlight %}
 
 {% highlight bash %}
