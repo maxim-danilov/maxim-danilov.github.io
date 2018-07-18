@@ -30,11 +30,13 @@ Zsh should be set as your default shell:
 chsh -s $(which zsh)
 {% endhighlight %}
 
-Перезапустить терминал В отображающиеся меню zsh выбрать пункт 2 
 Restart your terminal. You should see the configuration menu of zsh and choose option 2:
 `Populate your ~/.zshrc with the configuration recommended by the system administrator and exit`
 
+![image-title-here](/assets/img/0011.png){:class="img-responsive"}
+
 Don’t forget to move your configuration and aliases from .bashrc to .zshrc:
+![image-title-here](/assets/img/0012.png){:class="img-responsive"}
 
 ## Install Oh My Zsh
 Oh my zsh is a framework for managing your zsh. It adds a lot of helper functions, plugins, themes. 
@@ -79,7 +81,11 @@ In your terminator right click on the terminal
 Preferences>Profiles>Colors>Foreground and Background>Built-in schemes: Solarized dark
 Preferences>Profiles>Colors>Palette>Built-in schemes: Solarized
 
+![image-title-here](/assets/img/0013.png){:class="img-responsive"}
+
 Restart Terminator. You should see something like this:
+
+![image-title-here](/assets/img/0014.png){:class="img-responsive"}
 
 ## Oh My Zsh plugins
 ### Autosuggestions 
@@ -93,6 +99,8 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 Add the plugin to the list of plugins for Oh My Zsh to load (inside ~/.zshrc):
 `plugins=(zsh-autosuggestions)`
 
+![image-title-here](/assets/img/0006.gif){:class="img-responsive"}
+
 Press right arrow to use the suggestion. 
 
 ### Remove hostname
@@ -102,6 +110,8 @@ Add this line to your  ~/.zshrc
 {% highlight bash %}
 prompt_context() {} 
 {% endhighlight %}
+
+![image-title-here](/assets/img/0015.png){:class="img-responsive"}
 
 Now it looks more compact. 
 
@@ -113,13 +123,17 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
 {% endhighlight %}
 
+![image-title-here](/assets/img/0016.png){:class="img-responsive"}
+
 ### Vim 
-This plugin for vim fans. Now you can input difficult command easily. :)
+This plugin for vim fans. 
 
 {% highlight bash %}
 vim .zshrc
 {% endhighlight %}
 Add `vi-mode` to your plugins array. 
+
+Now you can input difficult command easily. :)
 
 ## Conclusion 
 We built a beautiful terminal with autosuggestions, autocorrect, highlighting, hotkeys and vim as input method. The terminal has potential for further development.
