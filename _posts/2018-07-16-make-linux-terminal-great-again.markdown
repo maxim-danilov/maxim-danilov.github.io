@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Make Linux terminal great again (Terminator + Oh My ZSH + autosuggestions + highlighting + Agnoster theme + powerline fonts + solarized colors)"
-date:   2018-07-16 12:49:10 +0300
+title: "Make Linux terminal great again (Terminator + Oh My ZSH + autosuggestions + highlighting + Agnoster theme + powerline fonts + solarized colors)"
+date: 2018-07-16 12:49:10 +0300
 categories: jekyll update
 ---
 
@@ -45,15 +45,15 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 {% endhighlight %}
 
 ## Install Powerline fonts 
-We need these fonts to show unicode chars in the terminal.
-https://github.com/powerline/fonts 
+We need [these fonts](https://github.com/powerline/fonts) to show unicode chars in the terminal.
+
 {% highlight bash %}
 sudo apt-get install fonts-powerline
 {% endhighlight %}
 
-Change theme to Agnoster
+## Change theme to Agnoster
 
-You need to change [ZSH_THEME="robbyrussell"] to [ZSH_THEME="agnoster"] in your .zshrc 
+You need to change `ZSH_THEME="robbyrussell"` to `ZSH_THEME="agnoster"` in your .zshrc 
 
 Restart your terminal. 
 
@@ -73,13 +73,15 @@ cd ~/.solarized
 Choose option 1 (dark theme). Then choose option 1 to download dircolors-solarized. After installation, open .zshrc and add the line:
 
 {% highlight bash %}
-eval \`dircolors ~/.dir_colors/dircolors\`
+eval `dircolors ~/.dir_colors/dircolors`
 {% endhighlight %}
 
 Then we need to activate just installed color palette: 
 In your terminator right click on the terminal
-Preferences>Profiles>Colors>Foreground and Background>Built-in schemes: Solarized dark
-Preferences>Profiles>Colors>Palette>Built-in schemes: Solarized
+
+`Preferences>Profiles>Colors>Foreground and Background>Built-in schemes`: `Solarized dark`
+
+`Preferences>Profiles>Colors>Palette>Built-in schemes`: `Solarized`
 
 ![image-title-here](/assets/img/0013.png){:class="img-responsive"}
 
@@ -105,7 +107,7 @@ Press right arrow to use the suggestion.
 
 ### Remove hostname
 The username takes some space of your terminal. We’ll remove this.
-Add this line to your  ~/.zshrc
+Add this line to your ~/.zshrc
 
 {% highlight bash %}
 prompt_context() {} 
