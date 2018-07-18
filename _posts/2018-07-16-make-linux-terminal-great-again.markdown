@@ -5,7 +5,7 @@ date: 2018-07-16 12:49:10 +0300
 categories: jekyll update
 ---
 
-![image-title-here](/assets/img/0010.png){:class="img-responsive"}
+![image-title-here](/assets/img/0010_c.png){:class="img-responsive"}
 
 The terminal is part of every software developer’s life. The terminal carry out routine tasks. Most Linux programs have only console interface. If you have a good terminal you can forget about boring graphical interface. :) 
 
