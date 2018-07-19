@@ -2,7 +2,6 @@
 layout: single
 title: "Make Linux terminal great again (Terminator + Oh My ZSH + autosuggestions + highlighting + Agnoster theme + powerline fonts + solarized colors)"
 date: 2018-07-16 12:49:10 +0300
-categories: bash zsh linux terminal 
 ---
 
 ![image-title-here](/assets/img/0010_c.png){:class="img-responsive"}

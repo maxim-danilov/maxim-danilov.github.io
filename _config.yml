@@ -12,18 +12,18 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 remote_theme             : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dirt" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Maxim Danilov Blog"
+title                    : "Maxim Danilov Developer Blog"
 title_separator          : "-"
 name                     : "Maxim Danilov"
 description              : "Hi! My name is Max and I'm a full-stack JavaScript developer. My blog focuses on tips for improving software development skills."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "maxim-danilov/maxim-danilov.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : "/assets/img/teaser.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   :  # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 100
 comments:
@@ -106,14 +106,14 @@ author:
   location         : "Russia, Taganrog"
   email            : "danilov.ms.dev@gmail.com"
   uri              : "https://www.upwork.com/freelancers/~01e44817c800471b90"
-  home             : # null (default), "absolute or relative url to link to author home"
+  home             : 
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
   facebook         :
   foursquare       :
-  github           : "https://github.com/maxim-danilov"
+  github           : "maxim-danilov"
   gitlab           :
   google_plus      :
   keybase          :

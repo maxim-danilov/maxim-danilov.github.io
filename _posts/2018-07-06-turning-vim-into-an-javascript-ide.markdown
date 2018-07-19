@@ -2,7 +2,6 @@
 layout: single
 title:  "Turning Vim into a JavaScript IDE"
 date:   2018-07-06 14:50:30 +0300
-categories: vim linux
 ---
 
 ![image-title-here](/assets/img/0005.gif){:class="img-responsive"}
