@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "Make Linux terminal great again (Terminator + Oh My ZSH + autosuggestions + highlighting + Agnoster theme + powerline fonts + solarized colors)"
 date: 2018-07-16 12:49:10 +0300
 categories: jekyll update
