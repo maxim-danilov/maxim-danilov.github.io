@@ -136,5 +136,43 @@ Add `vi-mode` to your plugins array.
 
 Now you can input difficult command easily. :)
 
+## My .zshrc
+{% highlight %}
+vim .zshrc
+export ZSH="/home/ghz/.oh-my-zsh"
+
+ZSH_THEME="agnoster"
+
+plugins=(
+  git
+  zsh-autosuggestions
+  vi-mode
+)
+
+source $ZSH/oh-my-zsh.sh
+
+# Colors:
+eval `dircolors ~/.dir_colors/dircolors`
+
+# Aliases:
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc
+echo 'export GEM_HOME=$HOME/gems' >> ~/.bashrc
+echo 'export PATH=$HOME/gems/bin:$PATH' >> ~/.bashrc
+
+# My aliases:
+alias lh='ls -a | egrep "^\."'
+
+# Remove hostname
+prompt_context() {} 
+
+# Highlighting
+source /home/ghz/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+{% endhighlight %}
+
+
 ## Conclusion 
 We built a beautiful terminal with autosuggestions, autocorrect, highlighting, hotkeys and vim as input method. The terminal has potential for further development.
