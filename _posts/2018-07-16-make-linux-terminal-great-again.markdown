@@ -137,7 +137,7 @@ Add `vi-mode` to your plugins array.
 Now you can input difficult command easily. :)
 
 ## My .zshrc
-{% highlight %}
+{% highlight viml %}
 vim .zshrc
 export ZSH="/home/ghz/.oh-my-zsh"
 
