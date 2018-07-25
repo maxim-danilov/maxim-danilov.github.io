@@ -4,9 +4,9 @@ title: "Make Linux terminal great again (Terminator + Oh My ZSH + autosuggestion
 date: 2018-07-16 12:49:10 +0300
 ---
 
-![image-title-here](/assets/img/0010_c.png){:class="img-responsive"}
-
 The terminal is part of every software developer’s life. The terminal carry out routine tasks. Most Linux programs have only console interface. If you have a good terminal you can forget about boring graphical interface. :) 
+
+![image-title-here](/assets/img/0010_c.png){:class="img-responsive"}
 
 However the default terminal is like an old typewriter. It doesn't have autosuggestions, autocorrect, highlighting. Let's fix it. 
 
