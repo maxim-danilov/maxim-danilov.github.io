@@ -270,7 +270,7 @@ Add `Plugin 'christoomey/vim-system-copy'` to `.vimrc`, run `:PluginInstall`.
 
 Use `cp` to copy into system clipboard and `cv` to paste from system clipboard.
 
-## My .vimrc
+## My current .vimrc
 {% highlight viml %}
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -290,6 +290,7 @@ Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
 Plugin 'grvcoelho/vim-javascript-snippets'
+Plugin 'terryma/vim-multiple-cursors'
 
 "Lint:
 Plugin 'w0rp/ale'
