@@ -1,5 +1,6 @@
 # Maxim Danilov Blog 
 [https://maxim-danilov.github.io](https://maxim-danilov.github.io) 
+
 This repository is the source code for my blog. The blog is built using Jekyll and Minimal Mistakes.
 
 ### Install 
