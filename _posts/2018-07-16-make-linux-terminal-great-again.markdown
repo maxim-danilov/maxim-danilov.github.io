@@ -4,11 +4,11 @@ title: "Make Linux terminal great again (Terminator + Oh My ZSH + autosuggestion
 date: 2018-07-16 12:49:10 +0300
 ---
 
-The terminal is part of every software developer’s life. The terminal carry out routine tasks. Most Linux programs have only console interface. If you have a good terminal you can forget about boring graphical interface. :) 
+The terminal is part of every software developer’s life. The terminal carries out routine tasks. Most Linux programs have only console interface. If you have a good terminal you can forget about a boring graphical interface. :) 
 
 ![image-title-here](/assets/img/0010_c.png){:class="img-responsive"}
 
-However the default terminal is like an old typewriter. It doesn't have autosuggestions, autocorrect, highlighting. Let's fix it. 
+However, the default terminal is like an old typewriter. It doesn't have autosuggestions, autocorrect, highlighting. Let's fix it. 
 
 ## Install Terminator
 Well, to start with we are going to update your terminal emulator. We will use Terminator instead of gnome-terminal. Terminator has appearance settings, hotkeys, text search, arrange terminals in a grid. 
@@ -18,7 +18,7 @@ sudo apt-get install terminator
 {% endhighlight %}
 
 ## Install Zsh
-Next we will update our unix shell. We will use zsh instead bash. Zsh has autocorrect, history search, plugins, improved bash language. 
+Next, we will update our Unix shell. We will use zsh instead of bash. Zsh has autocorrection, history search, plugins, improved bash language. 
 
 {% highlight bash %}
 sudo apt-get install zsh
@@ -44,7 +44,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 {% endhighlight %}
 
 ## Install Powerline fonts 
-We need [these fonts](https://github.com/powerline/fonts) to show unicode chars in the terminal.
+We need [these fonts](https://github.com/powerline/fonts) to show Unicode chars in the terminal.
 
 {% highlight bash %}
 sudo apt-get install fonts-powerline
@@ -57,7 +57,7 @@ You need to change `ZSH_THEME="robbyrussell"` to `ZSH_THEME="agnoster"` in your 
 Restart your terminal. 
 
 ## Install Solarized color
-Next we will install the color palette for the terminal. 
+Next, we will install the color palette for the terminal. 
 
 {% highlight bash %}
 git clone git://github.com/sigurdga/gnome-terminal-colors-solarized.git ~/.solarized
@@ -102,7 +102,7 @@ Add the plugin to the list of plugins for Oh My Zsh to load (inside ~/.zshrc):
 
 ![image-title-here](/assets/img/0006.gif){:class="img-responsive"}
 
-Press right arrow to use the suggestion. 
+Press the right arrow to use the suggestion. 
 
 ### Remove hostname
 The username takes some space of your terminal. We’ll remove this.
@@ -231,4 +231,4 @@ source /home/ghz/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlight
 
 
 ## Conclusion 
-We built a beautiful terminal with autosuggestions, autocorrect, highlighting, hotkeys and vim as input method. The terminal has potential for further development.
+We built a beautiful terminal with autosuggestions, autocorrect, highlighting, hotkeys and vim as an input method. The terminal has a potential for further development.

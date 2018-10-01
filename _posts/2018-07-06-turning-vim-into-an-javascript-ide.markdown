@@ -12,7 +12,7 @@ One of the best IDE for JavaScript is WebStorm. WebStorm is able to understand y
 
 Vim is a lightweight, fast, and free text editor. Vim is well known for its hotkeys that make coding faster and more comfortable. Developers created a lot of plugins for Vim. 
 
-So we're going to build a fast, flexible, lightweight IDE using Vim with plugins. Let’s to define the necessary functions of IDE:
+So we're going to build a fast, flexible, lightweight IDE using Vim with plugins. Let’s define the necessary functions of IDE:
 * Syntax highlighting 
 * Snippets 
 * Lint (analyzes source code to flag programming errors, bugs)
@@ -77,10 +77,10 @@ Launch Vim and run `:PluginInstall`
 ![image-title-here](/assets/img/0001.png){:class="img-responsive"}
 
 ## Install the syntax highlighting plugin
-A syntax hignlignter assists programmers when reading and analysing code. We will install this plugin:
+A syntax highlighting assists programmers when reading and analyzing code. We will install this plugin:
 [https://github.com/pangloss/vim-javascript](https://github.com/pangloss/vim-javascript)
 
-We need add this line to `.vimrc` into plugins section:
+We need add this line to `.vimrc` into the plugins section:
 
 `Plugin 'pangloss/vim-javascript'`
 
@@ -101,7 +101,7 @@ Now it looks better.
 ## Snippets
 Snippets make coding faster. You can quickly insert loops, conditions, functions and other language constructions by using hotkeys. 
 
-We need these plugins:
+We need to these plugins:
 [https://github.com/garbas/vim-snipmate](https://github.com/garbas/vim-snipmate)
 [https://github.com/grvcoelho/vim-javascript-snippets](https://github.com/grvcoelho/vim-javascript-snippets)
 
@@ -124,9 +124,9 @@ smap <C-J> <Plug>snipMateNextOrTrigger
 It works! 
 
 ## Lint
-A lint checks a source code for bugs, stylistic errors. It's an important tool for writing high quality code. 
+A lint checks a source code for bugs, stylistic errors. It's an important tool for writing high-quality code. 
 
-ALE is a modern lint plugin for Vim. ALE checks your code in the real time mode (while you edit your code). Actually ALE is a layer between Vim and a lint tool. We will use ESlint as a lint tool for a JS code.
+ALE is a modern lint plugin for Vim. ALE checks your code in the real time mode (while you edit your code). Actually, ALE is a layer between Vim and a lint tool. We will use ESlint as a lint tool for a JS code.
  
 Add to `.vimrc`:
 {% highlight plain %}
@@ -183,7 +183,7 @@ set number
 ![image-title-here](/assets/img/0007.png){:class="img-responsive"}
 
 ## Code formatter
-A code formatter (a code beautifier) converts your code into correct format. You can quickly write some code then to format it with just one click. ESLint and ALE will do this job. 
+A code formatter (a code beautifier) converts your code into the correct format. You can quickly write some code and to format it with just one click. ESLint and ALE will do this job. 
 
 These options activate code formatting on saving a file:
 {% highlight bash %}
@@ -268,7 +268,7 @@ apt-get install xsel
 
 Add `Plugin 'christoomey/vim-system-copy'` to `.vimrc`, run `:PluginInstall`.
 
-Use `cp` to copy into system clipboard and `cv` to paste from system clipboard.
+Use `cp` to copy into your system clipboard and `cv` to paste from system clipboard.
 
 ## My current .vimrc
 {% highlight viml %}

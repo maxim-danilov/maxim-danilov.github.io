@@ -31,7 +31,7 @@ xinput --list-props 'Maxim Danilov’s Trackpad'
 
 ![image-title-here](/assets/img/notcompressed/0018.png){:class="img-responsive"}
 
-### Adjust properties of your input device:
+### Adjust the properties of your input device:
 I'd like to increase my pointer speed using `Device Accel Constant Deceleration` property. The default value of the property is 2.5. I will change it to 0.1 that will increase speed.
 
 {% highlight bash %}
