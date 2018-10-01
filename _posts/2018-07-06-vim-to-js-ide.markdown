@@ -8,8 +8,6 @@ Integrated development environment (IDE) is an important tool for software devel
 
 ![image-title-here](/assets/img/0005.gif){:class="img-responsive"}
 
-One of the best IDE for JavaScript is WebStorm. WebStorm is able to understand your code, suggest a good autocomplete, debug and refactor your code. But such IDE's have a few disadvantages: sometimes it’s slow, takes much space, limited settings, high resource consumption.
-
 Vim is a lightweight, fast, and free text editor. Vim is well known for its hotkeys that make coding faster and more comfortable. Developers created a lot of plugins for Vim. 
 
 So we're going to build a fast, flexible, lightweight IDE using Vim with plugins. Let’s define the necessary functions of IDE:
