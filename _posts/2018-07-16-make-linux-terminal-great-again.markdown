@@ -128,107 +128,10 @@ echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> 
 
 ### Vim 
 This plugin for vim fans. 
-
-{% highlight bash %}
-export ZSH="/home/ghz/.oh-my-zsh"
-
-ZSH_THEME="agnoster"
-
-plugins=(
-  git
-  zsh-autosuggestions
-  vi-mode
-)
-
-source $ZSH/oh-my-zsh.sh
-
-# Colors:
-eval `dircolors ~/.dir_colors/dircolors`
-
-# Aliases:
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc
-echo 'export GEM_HOME=$HOME/gems' >> ~/.bashrc
-echo 'export PATH=$HOME/gems/bin:$PATH' >> ~/.bashrc
-
-# My aliases:
-alias lg='ll | grep '
-alias hg='history | grep '
-alias hv='history | vim -'
-alias copy='xsel -ib'
-alias mv="mv -v"
-alias rm="rm -vi"
-alias cp="cp -v"
-alias install="sudo apt install "
-alias update="sudo apt update"
-
-# Remove hostname:
-prompt_context() {} 
-
-# Highlighting:
-source /home/ghz/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-# My functions:
-mkdircd () {
-    mkdir "$@"
-    if [ "$1" = "-p" ]; then
-        cd "$2"
-    else
-        cd "$1"
-    fi
-}
-
-pathtofile () {
-  case "$1" in
-    /*) printf '%s\n' "$1";;
-    *) printf '%s\n' "$PWD/$1";;
-  esac
-}
-{% endhighlight %}
-Add `vi-mode` to your plugins array. 
-
-Now you can input difficult command easily. :)
+Add `vi-mode` to your plugins array. Press esc to switch to normal mode.
 
 ## My .zshrc
-{% highlight viml %}
-vim .zshrc
-export ZSH="/home/ghz/.oh-my-zsh"
-
-ZSH_THEME="agnoster"
-
-plugins=(
-  git
-  zsh-autosuggestions
-  vi-mode
-)
-
-source $ZSH/oh-my-zsh.sh
-
-# Colors:
-eval `dircolors ~/.dir_colors/dircolors`
-
-# Aliases:
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc
-echo 'export GEM_HOME=$HOME/gems' >> ~/.bashrc
-echo 'export PATH=$HOME/gems/bin:$PATH' >> ~/.bashrc
-
-# My aliases:
-alias lh='ls -a | egrep "^\."'
-
-# Remove hostname
-prompt_context() {} 
-
-# Highlighting
-source /home/ghz/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-{% endhighlight %}
-
+You can find the latest version of my .zshrc in my repository: [https://github.com/maxim-danilov/oh-my-zsh-config-maxim-danilov](https://github.com/maxim-danilov/oh-my-zsh-config-maxim-danilov)
 
 ## Conclusion 
 We built a beautiful terminal with autosuggestions, autocorrect, highlighting, hotkeys and vim as an input method. The terminal has a potential for further development.
